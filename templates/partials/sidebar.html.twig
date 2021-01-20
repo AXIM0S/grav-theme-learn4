@@ -5,8 +5,9 @@
         <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
         <div class="searchbox">
             <label for="search-by"><i class="fa fa-search"></i></label>
-            <input id="search-by" type="text" placeholder="{{ 'THEME_LEARN4_SEARCH_DOCUMENTATION'|t }}"
-                   data-search-input="{{ base_url_relative }}/s/q"/>
+            <form action="{{ base_url_relative }}/search" method="get">
+              <input id="search-by" type="text" name="q" placeholder="Press Enter for more" data-search-input="{{ base_url_relative }}/s/q">
+            </form>
             <span data-search-clear><i class="fa fa-close"></i></span>
         </div>
         <div class="search-options columns">
