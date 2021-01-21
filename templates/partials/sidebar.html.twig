@@ -2,7 +2,7 @@
 
 <div class="learn-brand">
     <div id="header">
-        <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
+        <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}"><img id="grav-logo" src="{{ url('theme://images/logo.png')  }}" alt="{{ site.title }}" style="margin: auto auto" /></a>
         <div class="searchbox">
             <label for="search-by"><i class="fa fa-search"></i></label>
             <form action="{{ base_url_relative }}/search" method="get">
