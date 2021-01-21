@@ -9,3 +9,5 @@ github:
 spectre:
   exp: false
   icons: false
+custom_logo:
+    - name: 'sg-wiki.png'
